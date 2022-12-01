@@ -36,7 +36,6 @@ body {
     font-family: 'Roboto', sans-serif;
     font-size: 2vmin;
     /*make the font not affect the window size*/
-    overflow: auto;
 
 
     background-color: #131313;
@@ -143,10 +142,3 @@ body {
     /*add a border to the grid*/
 
 }
-
-
-
-
-
-
-
