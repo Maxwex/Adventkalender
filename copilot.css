@@ -1,0 +1,141 @@
+
+body {
+    background-color: #131313;
+
+}
+.window.open {
+    font-size: 5vmin;
+}
+.window-24.open {
+    font-size: 15vmin;
+}
+.window-19.open,
+.window-12.open,
+.window-6.open {
+    font-size: 8vmin;
+}
+.window {
+
+    user-select: none;
+    position: relative;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    font-family: 'Roboto', sans-serif;
+    font-size: 2vmin;
+    /*make the font not affect the window size*/
+    overflow: auto;
+
+
+    background-color: #131313;
+    border-radius: 3vmin;
+
+
+}
+.window_h1{
+    color: white;
+}
+.window::before {
+    content: "";
+    padding: 1vmin;
+    border-radius: 3vmin;
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(-45deg, #062eff, #4f00fe, #9c00ff, #ff0074, red) fixed padding-box no-repeat;
+    background-position: calc((100vw - 90vmin)/2);
+    background-size: 100vmin;
+    -webkit-mask:
+            linear-gradient(#fff, #fff) content-box,
+            linear-gradient(#fff, #fff) ;
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+
+    /*create the clicked function*/
+    cursor: pointer;
+
+
+}
+
+/*add glow on hover*/
+.window:hover::after {
+    content: "";
+    border-radius: 3vmin;
+    padding: 0vmin;
+    inset: 0;
+    position: absolute;
+    background: linear-gradient(-45deg, rgba(6, 46, 255,1), rgba(255, 0, 116, 1)) fixed padding-box;
+    background-position: calc((100vw - 90vmin)/2);
+    background-size: 100vmin;
+    z-index: -2;
+    filter: blur(1vmin) brightness(1.4);
+    box-shadow: 0 0 .2vmin .1vmin #fff;
+    -webkit-box-shadow: 0 0 .2vmin .1vmin #fff;
+    transition: all 0.2s ease-in-out;
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    -ms-transition: all 0.2s ease-in-out;
+}
+
+
+
+
+
+.window-6 {
+    grid-column-start: 6;
+    grid-row-end: span 2
+}
+.window-12 {
+    grid-column-start: 1;
+    grid-row-end: span 2
+}
+.window-19 {
+    grid-column-start: 3;
+    grid-row-end: span 2
+}
+.window-24 {
+    grid-column-start: 5;
+    grid-column-end: span 2;
+    grid-row-start: 4;
+    grid-row-end: span 2
+}
+/*make the window appear glassy when hovered*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+.container {
+    padding-top: 10px;
+    /* make a diagonal gradient as background background: black;*/
+    display: grid;
+    border-color: blueviolet;
+/*make a 6x5 grid with quadratic element */
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-gap: 2vmin;
+
+    /*make the grid quadratic*/
+    width: 90vmin;
+    height: 75vmin;
+    /*center the grid*/
+    margin: auto;
+    /*add a border to the grid*/
+
+}
+
+
+
+
+
+
+
