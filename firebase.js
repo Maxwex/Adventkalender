@@ -41,7 +41,6 @@ function Clickable() {
 
     var elements =document.getElementsByClassName("window")
     for (var i = 0; i < 24; i++) {
-        console.log(i);
         elements[i].addEventListener("click",Clicked);
 
     }
@@ -53,7 +52,6 @@ function Clicked() {
     var classname = this.className;
     //remove all the text from the classname
     var number = classname.replace( /^\D+/g, '');
-    console.log(number);
     OpenWindow(number);
 }
 
@@ -86,7 +84,6 @@ function OpenWindow(number) {
             //add the item to local storage
             onValue(data, (snapshot) => {
                     const value = snapshot.val();
-                    console.log("prommiss" + number)
                     elements[0].innerHTML= value;
                     elements[0].classList.add("open");
                     //add the window to the local storage
