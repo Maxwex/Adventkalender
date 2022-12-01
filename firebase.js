@@ -77,7 +77,6 @@ function OpenWindow(number) {
         if (localStorage.getItem("window" + number) != null) {
             //get the item from local storage
             var item = ReadLocalWindowContent(number);
-            console.log("window window-" + number)
             elements[0].innerHTML= item;
             elements[0].classList.add("open");
 

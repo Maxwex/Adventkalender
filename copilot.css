@@ -3,6 +3,17 @@ body {
     background-color: #131313;
 
 }
+.title {
+    color: #ffffff;
+    font-family: 'Roboto', sans-serif;
+    font-size: 5vmin;
+    font-weight: 900;
+    line-height: 1.5;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    text-transform: uppercase;
+}
 .window.open {
     font-size: 5vmin;
 }

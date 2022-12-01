@@ -7,18 +7,17 @@
 <head>
     <!--embed a stylesheet-->
     <link rel="stylesheet" href="copilot.css">
-    <!--embed a javascript file-->
-
+    <!--add a favicon-->
+    <link rel="icon" href="star.svg" type="image/x-icon">
     <!--define the window-->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
-<title>Co-Pilot</title>
+<title>Adventkalender</title>
 </head>
 <body>
-<!--create an advent-calendar app, with 24 windows in a grid layout. Each window should show the number in the middle.
- when clicked on a window an image of a tree should appear-->
+<div class="title">  <p>Adventkalender</p></div>
 <div class="container">
     <div class="window window-1"><h1>1</h1>
     </div>
@@ -69,26 +68,15 @@
     <div class="window window-24"><h1>24</h1>
         </div>
 </div>
-<!--add a function to make the window clickable but only if the number is not higher, than the day of decembet-->
 
 
 
 <script src="copilot.js"></script>
 <script type="module" src="firebase.js">
     Clickable();
-    ReadWindowContent(1);
-
-</script><script>
-
-
 
 </script>
 
 
 </body>
 </html>
-
-
-
-
-
